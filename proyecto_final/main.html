@@ -1,0 +1,134 @@
+<style type="text/css">
+
+    h1 {
+      padding-top:             5%;
+      padding-bottom:          3%;
+      text-align:              center;
+      color:                   white;
+    }
+
+    .formula_interes{
+      margin-left:             40%;
+      text-align:              center;
+      width:                   20%;
+      border:                  2px solid white;
+      color:                   white;
+    }
+
+    .descripcion{
+      padding-bottom:          6%;
+      text-align:              center;
+      padding-left:            25%;
+      padding-top:             3%;
+      width:                   50%;
+      color:                   white;
+      font-size:               20px;
+    }
+
+    .descripcion:hover{
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke:     2px white;
+      font-size:               30px;
+    }
+
+    .uso{
+      /* width:                   50%;
+      padding-left:            5%; */
+      /* padding-top:             3%; */
+      padding-bottom:          10%;
+      border:                  10px solid white;
+      border-radius:           150px 150px 15px 15px;
+      background:              white;
+      text-align:              center;
+      box-shadow:              0px 0px 50px #000;
+    }
+
+    .titulo-app {
+      color:                   cornflowerblue;
+      padding-bottom:          5px;
+      font-size:               45px;
+    }
+
+    .campo {
+      margin-left:             150px;
+      margin-right:            150px;
+      margin-bottom:           70px;
+      padding:                 .5em;
+      border:                  2px solid black;
+      border-radius:           5px 5px 5px 5px;
+      text-align:              center;
+      font-size:               15px;
+      color:                   black;
+      /* display:          block; */
+      /* float:          left; */
+      /* border-right:          1px solid #7C7C7C; */
+      /* border-bottom:          1px solid #9C9C9C; */
+    }
+
+    .btn-calcular {
+      border:                  2px solid cornflowerblue;
+      border-radius:           20px 20px 20px 20px;
+      text-align:              center;
+      color:                   white;
+      align:                   center;
+      background:              cornflowerblue;
+      padding-left:            15px;
+      padding-right:           15px;
+      padding-top:             10px;
+      padding-bottom:          10px;
+      font-size:               25px;
+    }
+
+    .paso_inicial {
+      padding-top:             100px;
+      color:                   black;
+      font-size:               20px;
+    }
+
+    .pasos {
+      padding-top:             20px;
+      color:                   black;
+      font-size:               20px;
+    }
+
+</style>
+
+
+<!-- Nos permite mostrar fórmulas desde el html -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <h1 style="font-size:45px" > FÓRMULA DEL INTERÉS COMPUESTO </h1>
+        <div class="formula_interes" style="font-size:40px">
+              $$ {M = C (1 + i)^n} $$
+        </div>
+    </head>
+
+    <body style="background-color: rgb(10,195,255);" >
+        <p class="descripcion"> El interés compuesto es el interés que se va sumando al capital inicial y sobre el que se van generando nuevos intereses. </p>
+
+        <div class="uso">
+            <p class="titulo-app"> APLICACIÓN </p>
+
+            <input class="campo" type="text" placeholder="C| Capital (entero)">
+            <input class="campo" type="text" placeholder="M| Monto (entero) ">
+            <input class="campo" type="text" placeholder="i| Tasa de interés (%) ">
+
+            <br>
+
+            <a class="btn-calcular" style="text-decoration:none" href="">Calcular</a>
+
+            <p class="paso_inicial"> $$ {\frac{M}{C} = (1 + i)^n} $$ </p>
+
+            <p class="pasos"> $$ {log( \frac{M}{C} ) = log(1 + i)^n} $$ </p>
+            <p class="pasos"> $$ {log( \frac{M}{C} ) = n \log(1 + i)} $$ </p>
+            <p class="pasos"> $$ { n =  \frac{ log( \frac{M}{C} ) } { \log(1 + i) } } $$ </p>
+            <p class="pasos"> $$ {Sustituir: M,C,i} $$ </p>
+
+        </div>
+
+    </body>
+</html>

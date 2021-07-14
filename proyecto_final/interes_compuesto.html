@@ -1,0 +1,134 @@
+<style type="text/css">
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mensajeria {
+  width: 15%;
+  height: 450px;
+  background: #1d3e5e;
+  padding: 20px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 25px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 10px 47px #000;
+}
+
+.mensajeria h4 {
+  font-size: 25px;
+  margin-bottom: 35px;
+}
+
+.campo_nombre {
+  width: 100%;
+  background: #1d3e5e;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  border: 2px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+}
+
+.campo_titulo {
+  width: 100%;
+  background: #1d3e5e;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  border: 2px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+}
+
+.c_mensaje {
+  width: 100%;
+  background: #1d3e5e;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #1f53c5;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+}
+
+.mensajeria .enviar {
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  border-radius: 25px;
+  padding: 12px;
+  margin-bottom: 20px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+/* .mensajeria_vistos {
+  width: 50%;
+  height: 230px;
+  background: #1d3e5e;
+  padding: 40px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 25px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 10px 47px #000;
+  overflow-y: scroll;
+}
+
+.mensajeria_vistos h4 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.vistos li {
+  /* border-radius: 25px; */
+  /* border: 2px solid #3470ab; */
+  /* font-family: 'arial';
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  color: white;
+  list-style: none;
+} */
+</style>
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mensajeria</title>
+  </head>
+  <body>
+    <section class="mensajeria">
+      <h4>Aplicación del logaritmo</h4>
+        <form style="height: 10%; display: inline; padding: 0%; margin: 0;">
+          <input class="campo_nombre" type="text" multiple name="nombre" id="nombre" list="nombres" autocomplete="off" placeholder="Monto">
+          <!-- <datalist id="nombres">
+              <option>TODOS</option>
+             {{#each destinatarios}}
+               <option>{{Nombre}}</option>
+             {{/each}}
+          </datalist> -->
+
+          <input class="campo_titulo" type="text" name="titulo" id="titulo" autocomplete="off" placeholder="Capital">
+
+          <textarea class="c_mensaje" type="text" name="mensaje" id="mensaje" maxlength="800" placeholder="Tasa de interés compuesta"></textarea>
+
+          <input class="enviar" type="submit" name="enviar" value="Enviar">
+      <form/>
+    </section>
+  </body>
+</html>
